@@ -1,0 +1,721 @@
+,user_id,tw_id,tw_name,cat_id,cat_name
+0,30309979,16376,106andpark,3698,BET - Roll-Up - Custom
+1,30309979,16376,106andpark,3955,Global* Media & Entertainment
+2,30309979,16376,106andpark,1621,KCRETIRED USA - TV - Cable (9/15/14 - 9/21/14)
+3,30309979,16376,106andpark,1409,KCRETIRED USA - TV - In Production
+4,30309979,16376,106andpark,1477,KCRETIRED USA - TV - Scripted
+5,30309979,16376,106andpark,5063,Marketing - TV all - Custom
+6,30309979,16376,106andpark,5062,Marketing - US Media Industry - Custom
+7,30309979,16376,106andpark,4620,S&P - VIAB - Viacom Inc.
+8,30309979,16376,106andpark,5007,TV Network Roll Up Ranking - Viacom - All
+9,30309979,16376,106andpark,3498,TV Network Roll Up Ranking - Viacom - BET
+10,30309979,16376,106andpark,43,Tv show
+11,30309979,16376,106andpark,3305,TV Show
+12,30309979,16376,106andpark,4894,US* All
+13,30309979,16376,106andpark,1185,USA - Pages 2
+14,30309979,16376,106andpark,1204,USA - TV
+15,30309979,16376,106andpark,3096,USA - TV - All Networks - Unscripted
+16,30309979,16376,106andpark,1482,USA - TV - Cable
+17,30309979,16376,106andpark,2940,US* Media & Entertainment
+18,30309979,16376,106andpark,3232,US** Media & Entertainment - TV Shows
+19,30309979,16376,106andpark,3109,US*** Media & Entertainment - TV Shows - Cable
+20,30309979,16376,106andpark,3063,US**** Media & Entertainment - TV Shows - Cable - Music
+21,30309979,16376,106andpark,2799,US*** Media & Entertainment - TV Shows - Misc
+22,30309979,16376,106andpark,3472,Viacom - All Properties - Custom
+23,30309979,16376,106andpark,3436,Viacom - BET (all) - Custom
+24,30309979,16376,106andpark,3440,Viacom - BET (BET only) - Custom
+25,30309979,16376,106andpark,3473,Viacom - US Properties - Custom
+26,30309979,16376,106andpark,2346,Year in Review US 2014 - TV Shows
+27,18342955,1211,abc11_wtvd,4670,ABC - All OTV DMAs - Competitive - Custom 
+28,18342955,1211,abc11_wtvd,4088,ABC News Links - Custom (Internal)
+29,18342955,1211,abc11_wtvd,2985,ABC O&O
+30,18342955,1211,abc11_wtvd,3955,Global* Media & Entertainment
+31,18342955,1211,abc11_wtvd,5063,Marketing - TV all - Custom
+32,18342955,1211,abc11_wtvd,5062,Marketing - US Media Industry - Custom
+33,18342955,1211,abc11_wtvd,354,Raleigh-Durham Custom
+34,18342955,1211,abc11_wtvd,3226,Raleigh-Durham Local News - Custom
+35,18342955,1211,abc11_wtvd,416,"Raleigh-Durham, NC Custom"
+36,18342955,1211,abc11_wtvd,4285,S&P - DIS - The Walt Disney Company
+37,18342955,1211,abc11_wtvd,230,TV DMA #21-40
+38,18342955,1211,abc11_wtvd,45,Tv network
+39,18342955,1211,abc11_wtvd,3311,TV Network
+40,18342955,1211,abc11_wtvd,4894,US* All
+41,18342955,1211,abc11_wtvd,1185,USA - Pages 2
+42,18342955,1211,abc11_wtvd,1204,USA - TV
+43,18342955,1211,abc11_wtvd,2940,US* Media & Entertainment
+44,18342955,1211,abc11_wtvd,2937,US** Media & Entertainment - TV Networks
+45,18342955,1211,abc11_wtvd,2797,US*** Media & Entertainment - TV Networks - Local
+46,16374678,4450,ABC7,4670,ABC - All OTV DMAs - Competitive - Custom 
+47,16374678,4450,ABC7,4088,ABC News Links - Custom (Internal)
+48,16374678,4450,ABC7,1851,ABC News Local stations
+49,16374678,4450,ABC7,2985,ABC O&O
+50,16374678,4450,ABC7,4743,DMA #2 Los Angeles - Custom
+51,16374678,4450,ABC7,5390,FB Video Views
+52,16374678,4450,ABC7,2385,Fox LA - Custom
+53,16374678,4450,ABC7,3955,Global* Media & Entertainment
+54,16374678,4450,ABC7,4945,LA 5 TV Stations
+55,16374678,4450,ABC7,229,Local TV
+56,16374678,4450,ABC7,344,Los Angeles Custom
+57,16374678,4450,ABC7,3221,Los Angeles Local News - Custom
+58,16374678,4450,ABC7,5063,Marketing - TV all - Custom
+59,16374678,4450,ABC7,5062,Marketing - US Media Industry - Custom
+60,16374678,4450,ABC7,3844,PIX11 - Other Media
+61,16374678,4450,ABC7,4285,S&P - DIS - The Walt Disney Company
+62,16374678,4450,ABC7,49,Tv channel
+63,16374678,4450,ABC7,3315,TV Channel
+64,16374678,4450,ABC7,221,TV DMA #1-20
+65,16374678,4450,ABC7,3183,Univision Local Demo LA
+66,16374678,4450,ABC7,1812,Univision Local - LA
+67,16374678,4450,ABC7,4894,US* All
+68,16374678,4450,ABC7,1185,USA - Pages 2
+69,16374678,4450,ABC7,1204,USA - TV
+70,16374678,4450,ABC7,2940,US* Media & Entertainment
+71,16374678,4450,ABC7,2937,US** Media & Entertainment - TV Networks
+72,16374678,4450,ABC7,2797,US*** Media & Entertainment - TV Networks - Local
+73,119606058,13029,aquiyahorashow,5390,FB Video Views
+74,119606058,13029,aquiyahorashow,3955,Global* Media & Entertainment
+75,119606058,13029,aquiyahorashow,1621,KCRETIRED USA - TV - Cable (9/15/14 - 9/21/14)
+76,119606058,13029,aquiyahorashow,1624,KCRETIRED USA - TV - Dayparts - Morning (9/15/14 - 9/21/14)
+77,119606058,13029,aquiyahorashow,4019,Marketing - Latin America - TV Pages
+78,119606058,13029,aquiyahorashow,4020,Marketing - Latin America - TV Shows
+79,119606058,13029,aquiyahorashow,5006,TV Network Roll Up Ranking - Univision - All
+80,119606058,13029,aquiyahorashow,3702,TV Network Roll Up Ranking - Univision - Univision
+81,119606058,13029,aquiyahorashow,43,Tv show
+82,119606058,13029,aquiyahorashow,3305,TV Show
+83,119606058,13029,aquiyahorashow,1420,Univision - Aqui y Ahora Category
+84,119606058,13029,aquiyahorashow,3791,Univision News Weekly Report
+85,119606058,13029,aquiyahorashow,4894,US* All
+86,119606058,13029,aquiyahorashow,1913,USA - TV - Hispanic
+87,119606058,13029,aquiyahorashow,2940,US* Media & Entertainment
+88,119606058,13029,aquiyahorashow,2799,US*** Media & Entertainment - TV Shows - Misc
+89,119606058,13029,aquiyahorashow,2346,Year in Review US 2014 - TV Shows
+90,16560657,1635,bet,5232,BET - 2015 Review Report - Custom
+91,16560657,1635,bet,4051,BET - Competitive TV Networks - Custom
+92,16560657,1635,bet,1463,Bravo - Networks
+93,16560657,1635,bet,99,Cable Networks
+94,16560657,1635,bet,1434,cS - Fuse Network - Custom
+95,16560657,1635,bet,1455,cS - Revolt Media - Custom
+96,16560657,1635,bet,1669,Fuse - Custom
+97,16560657,1635,bet,3955,Global* Media & Entertainment
+98,16560657,1635,bet,1899,Hallmark Channel - Competitive Networks
+99,16560657,1635,bet,829,iOne - Custom
+100,16560657,1635,bet,1471,KCRETIRED USA - TV - Cable Networks
+101,16560657,1635,bet,5063,Marketing - TV all - Custom
+102,16560657,1635,bet,5062,Marketing - US Media Industry - Custom
+103,16560657,1635,bet,4620,S&P - VIAB - Viacom Inc.
+104,16560657,1635,bet,45,Tv network
+105,16560657,1635,bet,3311,TV Network
+106,16560657,1635,bet,5007,TV Network Roll Up Ranking - Viacom - All
+107,16560657,1635,bet,3498,TV Network Roll Up Ranking - Viacom - BET
+108,16560657,1635,bet,679,TV Networks Aggregate (Marketing)
+109,16560657,1635,bet,682,TV Networks Cable (Marketing)
+110,16560657,1635,bet,4894,US* All
+111,16560657,1635,bet,1185,USA - Pages 2
+112,16560657,1635,bet,1204,USA - TV
+113,16560657,1635,bet,2940,US* Media & Entertainment
+114,16560657,1635,bet,2937,US** Media & Entertainment - TV Networks
+115,16560657,1635,bet,2780,US*** Media & Entertainment - TV Networks - Cable
+116,16560657,1635,bet,2362,VH1 - Custom
+117,16560657,1635,bet,3472,Viacom - All Properties - Custom
+118,16560657,1635,bet,3436,Viacom - BET (all) - Custom
+119,16560657,1635,bet,3440,Viacom - BET (BET only) - Custom
+120,16560657,1635,bet,3473,Viacom - US Properties - Custom
+121,16560657,1635,bet,2345,Year in Review US 2014 - TV Networks
+122,226299107,19987,betnews,4620,S&P - VIAB - Viacom Inc.
+123,226299107,19987,betnews,45,Tv network
+124,226299107,19987,betnews,3311,TV Network
+125,226299107,19987,betnews,3472,Viacom - All Properties - Custom
+126,226299107,19987,betnews,3436,Viacom - BET (all) - Custom
+127,226299107,19987,betnews,3440,Viacom - BET (BET only) - Custom
+128,226299107,19987,betnews,3473,Viacom - US Properties - Custom
+129,9695312,2925,billboard,760,Billboard - Custom
+130,9695312,2925,billboard,958,Billboard Music - Custom
+131,9695312,2925,billboard,5471,Bleacher Report - Additional Top Publishers Category - Custom
+132,9695312,2925,billboard,5470,Bleacher Report - Top Publishers Category - Custom
+133,9695312,2925,billboard,1455,cS - Revolt Media - Custom
+134,9695312,2925,billboard,5719,Entertainment - Custom
+135,9695312,2925,billboard,5390,FB Video Views
+136,9695312,2925,billboard,1669,Fuse - Custom
+137,9695312,2925,billboard,3956,Global* Publishing
+138,9695312,2925,billboard,4697,LoveLive - Custom Musicians 
+139,9695312,2925,billboard,5062,Marketing - US Media Industry - Custom
+140,9695312,2925,billboard,4,Media/news/publishing
+141,9695312,2925,billboard,3309,Media/News/Publishing
+142,9695312,2925,billboard,5584,MixMag - Custom
+143,9695312,2925,billboard,4688,Music Publications- Custom
+144,9695312,2925,billboard,4987,Playboy - Up & Coming - Custom
+145,9695312,2925,billboard,5616,Shazam - Custom 
+146,9695312,2925,billboard,5575,Shazam – Custom
+147,9695312,2925,billboard,5755,Telemundo - Music - Custom
+148,9695312,2925,billboard,1854,THR Cross-Engaged Category 
+149,9695312,2925,billboard,4894,US* All
+150,9695312,2925,billboard,1194,USA - Media/News/Publishing
+151,9695312,2925,billboard,1185,USA - Pages 2
+152,9695312,2925,billboard,1111,US - Magazines - Entertainment
+153,9695312,2925,billboard,2935,US* Publishing
+154,9695312,2925,billboard,2934,US** Publishing - Publications & Websites
+155,9695312,2925,billboard,2747,US*** Publishing - Publications & Websites - Entertainment
+156,9695312,2925,billboard,2497,Yahoo - Music Custom Category
+157,9695312,2925,billboard,2339,Year in Review US 2014 - Publishing
+158,32448740,14457,brueggers,18,Food/beverages
+159,32448740,14457,brueggers,3301,Food/Beverages
+160,32448740,14457,brueggers,3930,Global** Consumer Goods - Restaurants
+161,32448740,14457,brueggers,3937,Global*** Consumer Goods - Restaurants - Quick Serve Restaurants
+162,32448740,14457,brueggers,2651,Hunter PR - US Restaurants Custom
+163,32448740,14457,brueggers,1882,Quick Serve Restaurants
+164,32448740,14457,brueggers,3233,SBC Advertising - Bruegger's Bagels - Custom
+165,32448740,14457,brueggers,4894,US* All
+166,32448740,14457,brueggers,2938,US* Consumer Goods
+167,32448740,14457,brueggers,2916,US** Consumer Goods - Restaurants
+168,32448740,14457,brueggers,2767,US*** Consumer Goods - Restaurants - Quick Serve Restaurants
+169,32448740,14457,brueggers,2360,Year in Review US 2014 - CPG
+170,32448740,14457,brueggers,2340,Year in Review US 2014 - Restaurants
+171,1426645165,8474,bustle,5471,Bleacher Report - Additional Top Publishers Category - Custom
+172,1426645165,8474,bustle,763,Bustle - Competitive Custom
+173,1426645165,8474,bustle,3845,Bustle- H&M Custom Category
+174,1426645165,8474,bustle,832,Bustle - Publishing
+175,1426645165,8474,bustle,4957,Conde Nast - Beauty Publishers Competitive - Custom
+176,1426645165,8474,bustle,4931,Conde Nast - Women's Health/Wellness Competitive - Custom
+177,1426645165,8474,bustle,4935,Conde Nast - Women's Interest Competitive - Custom 
+178,1426645165,8474,bustle,5024,Epic Reads Indirect Competitor Set
+179,1426645165,8474,bustle,5390,FB Video Views
+180,1426645165,8474,bustle,4865,Fusion Digital Competitors - Custom Category
+181,1426645165,8474,bustle,3956,Global* Publishing
+182,1426645165,8474,bustle,3976,Greatist - Competitive Custom
+183,1426645165,8474,bustle,964,Hearst Young Women - Custom
+184,1426645165,8474,bustle,2217,HLN - Competitive Custom
+185,1426645165,8474,bustle,5062,Marketing - US Media Industry - Custom
+186,1426645165,8474,bustle,33,News/media website
+187,1426645165,8474,bustle,3312,News/Media Website
+188,1426645165,8474,bustle,5643, Rare Competitive Set
+189,1426645165,8474,bustle,4089,Scary Mommy - Custom
+190,1426645165,8474,bustle,844,Shandy Media - Competitive 
+191,1426645165,8474,bustle,4733,SheKnows Competitive - Custom
+192,1426645165,8474,bustle,4679,Some Spider Parents - Competitive Custom 
+193,1426645165,8474,bustle,4894,US* All
+194,1426645165,8474,bustle,1194,USA - Media/News/Publishing
+195,1426645165,8474,bustle,1185,USA - Pages 2
+196,1426645165,8474,bustle,2935,US* Publishing
+197,1426645165,8474,bustle,2934,US** Publishing - Publications & Websites
+198,1426645165,8474,bustle,2714,US*** Publishing - Publications & Websites - Women's Interest
+199,1426645165,8474,bustle,2548,xoJane - Competitive Custom
+200,1426645165,8474,bustle,2339,Year in Review US 2014 - Publishing
+201,21308602,1335,cartoonnetwork,99,Cable Networks
+202,21308602,1335,cartoonnetwork,2972,Cartoon Network - CN Owned Category
+203,21308602,1335,cartoonnetwork,4111,Cartoon Network - Competitive Set 
+204,21308602,1335,cartoonnetwork,2974,Cartoon Network - Kids & Family Brands Category
+205,21308602,1335,cartoonnetwork,2363,Cartoon Network - Linear Competitive Category
+206,21308602,1335,cartoonnetwork,1594,Comedy Central - Competitive Media Networks
+207,21308602,1335,cartoonnetwork,4705,Disney Media Competitive - Custom
+208,21308602,1335,cartoonnetwork,1833,DreamWorks Animation - Custom
+209,21308602,1335,cartoonnetwork,3031,ESPN Competitive TV Nets
+210,21308602,1335,cartoonnetwork,1291,ESPN Research - Competitors
+211,21308602,1335,cartoonnetwork,3955,Global* Media & Entertainment
+212,21308602,1335,cartoonnetwork,1471,KCRETIRED USA - TV - Cable Networks
+213,21308602,1335,cartoonnetwork,2236,L2 Television Category
+214,21308602,1335,cartoonnetwork,5063,Marketing - TV all - Custom
+215,21308602,1335,cartoonnetwork,5062,Marketing - US Media Industry - Custom
+216,21308602,1335,cartoonnetwork,753,Nickelodeon - US Custom
+217,21308602,1335,cartoonnetwork,4602,S&P - TWX - Time Warner Inc.
+218,21308602,1335,cartoonnetwork,4073,Turner Sociology - All Networks - Custom
+219,21308602,1335,cartoonnetwork,5458,Turner Sociology - Cartoon Network - Custom
+220,21308602,1335,cartoonnetwork,45,Tv network
+221,21308602,1335,cartoonnetwork,3311,TV Network
+222,21308602,1335,cartoonnetwork,5005,TV Network Roll Up Ranking - Time Warner - All
+223,21308602,1335,cartoonnetwork,3500,TV Network Roll Up Ranking - Time Warner - Cartoon Network
+224,21308602,1335,cartoonnetwork,679,TV Networks Aggregate (Marketing)
+225,21308602,1335,cartoonnetwork,682,TV Networks Cable (Marketing)
+226,21308602,1335,cartoonnetwork,4894,US* All
+227,21308602,1335,cartoonnetwork,2940,US* Media & Entertainment
+228,21308602,1335,cartoonnetwork,2937,US** Media & Entertainment - TV Networks
+229,21308602,1335,cartoonnetwork,2780,US*** Media & Entertainment - TV Networks - Cable
+230,21308602,1335,cartoonnetwork,2345,Year in Review US 2014 - TV Networks
+231,759251,4929,CNN,890,ABC - Cable News Network
+232,759251,4929,CNN,1841,AccuWeather Clicks Collection
+233,759251,4929,CNN,391,AOL Custom
+234,759251,4929,CNN,5471,Bleacher Report - Additional Top Publishers Category - Custom
+235,759251,4929,CNN,1040,Bleacher Report - News Custom
+236,759251,4929,CNN,5470,Bleacher Report - Top Publishers Category - Custom
+237,759251,4929,CNN,2178,CNN - Competitive Custom 
+238,759251,4929,CNN,821,CNN - Custom
+239,759251,4929,CNN,1297,CNN - Custom 2
+240,759251,4929,CNN,1407,CNN - Custom 3
+241,759251,4929,CNN,1534,comScore - BBC UK - Custom
+242,759251,4929,CNN,1459,"cS - Bankrate, Inc. - Custom"
+243,759251,4929,CNN,1460,cS - Business Insider - Custom
+244,759251,4929,CNN,465,ESPN Trial - Competitive Category
+245,759251,4929,CNN,5390,FB Video Views
+246,759251,4929,CNN,2166,Fox News - Competitive
+247,759251,4929,CNN,3756,Fox News - Monthly Report - Custom
+248,759251,4929,CNN,3272,Fox News - News - Custom 
+249,759251,4929,CNN,3955,Global* Media & Entertainment
+250,759251,4929,CNN,4842,GOP Debate - News
+251,759251,4929,CNN,2217,HLN - Competitive Custom
+252,759251,4929,CNN,178,Huffington Post - Custom
+253,759251,4929,CNN,179,HuffPost Live - Custom
+254,759251,4929,CNN,1471,KCRETIRED USA - TV - Cable Networks
+255,759251,4929,CNN,2236,L2 Television Category
+256,759251,4929,CNN,2262,L2 TV - CNN
+257,759251,4929,CNN,4026,Marketing - Latin America - Evening Shows
+258,759251,4929,CNN,4034,"Marketing - Latin America - Media, News, Publishing, Editorials, Blogs"
+259,759251,4929,CNN,4019,Marketing - Latin America - TV Pages
+260,759251,4929,CNN,4,Media/news/publishing
+261,759251,4929,CNN,3309,Media/News/Publishing
+262,759251,4929,CNN,5732,Media Roll Up Ranking - CNN
+263,759251,4929,CNN,1267,Mexico - Televisa - Custom
+264,759251,4929,CNN,3826,National Geographic - Custom
+265,759251,4929,CNN,4987,Playboy - Up & Coming - Custom
+266,759251,4929,CNN,4602,S&P - TWX - Time Warner Inc.
+267,759251,4929,CNN,1842,The Daily Mail- Top Competitors 
+268,759251,4929,CNN,5214,The Dodo - Broad - Custom
+269,759251,4929,CNN,5414,The Young Turks - Custom
+270,759251,4929,CNN,2443,TIME - Custom 
+271,759251,4929,CNN,4073,Turner Sociology - All Networks - Custom
+272,759251,4929,CNN,5460,Turner Sociology - CNN - Custom
+273,759251,4929,CNN,5005,TV Network Roll Up Ranking - Time Warner - All
+274,759251,4929,CNN,3502,TV Network Roll Up Ranking - Time Warner - CNN
+275,759251,4929,CNN,679,TV Networks Aggregate (Marketing)
+276,759251,4929,CNN,682,TV Networks Cable (Marketing)
+277,759251,4929,CNN,1429,Univision - News Custom Category
+278,759251,4929,CNN,4894,US* All
+279,759251,4929,CNN,1194,USA - Media/News/Publishing
+280,759251,4929,CNN,1185,USA - Pages 2
+281,759251,4929,CNN,2940,US* Media & Entertainment
+282,759251,4929,CNN,2794,US** Media & Entertainment - Misc
+283,759251,4929,CNN,3487,Warner Bros. - Entertainment News - Custom
+284,759251,4929,CNN,2551,Yahoo - News Custom Category
+285,759251,4929,CNN,2345,Year in Review US 2014 - TV Networks
+286,73200694,3667,Coach,2238,ABC - Other Brands Custom 
+287,73200694,3667,Coach,687,Coach Core Custom
+288,73200694,3667,Coach,792,Coach Retail/Online Custom
+289,73200694,3667,Coach,2582,Fashion Week 2015 Spring Designers
+290,73200694,3667,Coach,5390,FB Video Views
+291,73200694,3667,Coach,5568,FW2016 NY Fashion Week - Custom
+292,73200694,3667,Coach,3938,Global** Retail - Apparel & Accessories
+293,73200694,3667,Coach,3890,LensCrafters - Eyewear Brands - Custom
+294,73200694,3667,Coach,620,Luxury Brands
+295,73200694,3667,Coach,4729,Marketing - Retail - Apparel & Accessories
+296,73200694,3667,Coach,2617,OMD - Coach Trial - International 
+297,73200694,3667,Coach,4713,RBC Retailers - Custom
+298,73200694,3667,Coach,2090,Retail - All Stores
+299,73200694,3667,Coach,14,Retail and consumer merchandise
+300,73200694,3667,Coach,3308,Retail and Consumer Merchandise
+301,73200694,3667,Coach,4259,S&P - COH - Coach Inc
+302,73200694,3667,Coach,1571,SS2015 NY Fashion Week
+303,73200694,3667,Coach,4049,SS2016 NY Fashion Week
+304,73200694,3667,Coach,1198,USA - Fashion/Style
+305,73200694,3667,Coach,4894,US* All
+306,73200694,3667,Coach,1185,USA - Pages 2
+307,73200694,3667,Coach,2939,US* Retail
+308,73200694,3667,Coach,2932,US** Retail - Apparel & Accessories
+309,73200694,3667,Coach,2795,US*** Retail - Apparel & Accessories - Apparel
+310,73200694,3667,Coach,3464,US**** Retail - Apparel & Accessories - Apparel - Mass Apparel
+311,73200694,3667,Coach,2325,Year in Review US 2014 - Apparel & Accessories
+312,634784951,14922,dasaniwater,2452,CPG Webinar - Beverage
+313,634784951,14922,dasaniwater,2463,CPG Webinar - Coca-Cola
+314,634784951,14922,dasaniwater,2479,CPG Webinar - Rollup
+315,634784951,14922,dasaniwater,3206,Dasani - Comparison to Internal Coke brands
+316,634784951,14922,dasaniwater,2971,Dasani - Custom
+317,634784951,14922,dasaniwater,1902,Evian - Custom
+318,634784951,14922,dasaniwater,5390,FB Video Views
+319,634784951,14922,dasaniwater,3929,Global** Consumer Goods - Beverages
+320,634784951,14922,dasaniwater,2,Product/service
+321,634784951,14922,dasaniwater,3298,Product/Service
+322,634784951,14922,dasaniwater,4416,S&P - KO - The Coca-Cola Company
+323,634784951,14922,dasaniwater,4894,US* All
+324,634784951,14922,dasaniwater,2938,US* Consumer Goods
+325,634784951,14922,dasaniwater,2917,US** Consumer Goods - Beverages
+326,634784951,14922,dasaniwater,2718,US*** Consumer Goods - Beverages - Water (Beverages)
+327,634784951,14922,dasaniwater,1954,Water/Sports Drinks/Energy Drinks
+328,634784951,14922,dasaniwater,2329,Year in Review US 2014 - Beverage
+329,634784951,14922,dasaniwater,2360,Year in Review US 2014 - CPG
+330,14946736,445,DIRECTV,2238,ABC - Other Brands Custom 
+331,14946736,445,DIRECTV,2203,CES - Cable Telecom Wireless
+332,14946736,445,DIRECTV,932,DIRECTV - Competitive
+333,14946736,445,DIRECTV,4825,DIRECTV Roll Up Category
+334,14946736,445,DIRECTV,398,DISH - Custom
+335,14946736,445,DIRECTV,3967,Global** Telecommunications - Service Providers
+336,14946736,445,DIRECTV,27,MVPD
+337,14946736,445,DIRECTV,334,MVPD Twitter
+338,14946736,445,DIRECTV,2,Product/service
+339,14946736,445,DIRECTV,3298,Product/Service
+340,14946736,445,DIRECTV,4582,S&P - T - AT&T Inc
+341,14946736,445,DIRECTV,466,Suddenlink - MVPD Category
+342,14946736,445,DIRECTV,4894,US* All
+343,14946736,445,DIRECTV,1185,USA - Pages 2
+344,14946736,445,DIRECTV,1187,USA - Telecom
+345,14946736,445,DIRECTV,2911,US* Telecommunications
+346,14946736,445,DIRECTV,2691,US** Telecommunications - Service Providers
+347,14946736,445,DIRECTV,400,Verizon Telcom
+348,14946736,445,DIRECTV,150,Xfinity - Custom
+349,14946736,445,DIRECTV,2337,Year in Review US 2014 - MVPD
+350,27677483,959,essencemag,5232,BET - 2015 Review Report - Custom
+351,27677483,959,essencemag,2455,CPG Webinar - Health & Beauty
+352,27677483,959,essencemag,2479,CPG Webinar - Rollup
+353,27677483,959,essencemag,1562,Fashion Fair - Custom
+354,27677483,959,essencemag,5390,FB Video Views
+355,27677483,959,essencemag,3956,Global* Publishing
+356,27677483,959,essencemag,829,iOne - Custom
+357,27677483,959,essencemag,5,Magazine
+358,27677483,959,essencemag,4047,Marketing - MPA Magazine 360 - Custom
+359,27677483,959,essencemag,5062,Marketing - US Media Industry - Custom
+360,27677483,959,essencemag,5198,Publisher Roll Up Ranking - Time Inc
+361,27677483,959,essencemag,2668,Time Inc. - Publications 
+362,27677483,959,essencemag,4080,Time Inc - Style & Entertainment
+363,27677483,959,essencemag,5252,TIME Inc. - TIME Brands Rollup - Custom
+364,27677483,959,essencemag,4894,US* All
+365,27677483,959,essencemag,1194,USA - Media/News/Publishing
+366,27677483,959,essencemag,1185,USA - Pages 2
+367,27677483,959,essencemag,1111,US - Magazines - Entertainment
+368,27677483,959,essencemag,2935,US* Publishing
+369,27677483,959,essencemag,2934,US** Publishing - Publications & Websites
+370,27677483,959,essencemag,2714,US*** Publishing - Publications & Websites - Women's Interest
+371,27677483,959,essencemag,2328,Year in Review US 2014 - Beauty
+372,27677483,959,essencemag,2360,Year in Review US 2014 - CPG
+373,25053299,5033,fortunemagazine,5628,AOL - TechCrunch Competitive - Custom
+374,25053299,5033,fortunemagazine,1917,Barron's - Custom
+375,25053299,5033,fortunemagazine,133,Bloomberg - Custom
+376,25053299,5033,fortunemagazine,1823,CNN Money - Competitive Custom
+377,25053299,5033,fortunemagazine,1888,Fast Company - Custom
+378,25053299,5033,fortunemagazine,5390,FB Video Views
+379,25053299,5033,fortunemagazine,3813,Forbes - Ad-Sales  Competitive - Custom
+380,25053299,5033,fortunemagazine,2948,Forbes Competitors - Custom
+381,25053299,5033,fortunemagazine,1469,Fortune.com - Custom
+382,25053299,5033,fortunemagazine,3956,Global* Publishing
+383,25053299,5033,fortunemagazine,1368,Inc. - Custom
+384,25053299,5033,fortunemagazine,5,Magazine
+385,25053299,5033,fortunemagazine,4047,Marketing - MPA Magazine 360 - Custom
+386,25053299,5033,fortunemagazine,5062,Marketing - US Media Industry - Custom
+387,25053299,5033,fortunemagazine,4,Media/news/publishing
+388,25053299,5033,fortunemagazine,3309,Media/News/Publishing
+389,25053299,5033,fortunemagazine,5198,Publisher Roll Up Ranking - Time Inc
+390,25053299,5033,fortunemagazine,4079,Time Inc. - News & Sports 
+391,25053299,5033,fortunemagazine,2668,Time Inc. - Publications 
+392,25053299,5033,fortunemagazine,5252,TIME Inc. - TIME Brands Rollup - Custom
+393,25053299,5033,fortunemagazine,5315,T. Rowe Price Cross Engaged Twitter
+394,25053299,5033,fortunemagazine,4894,US* All
+395,25053299,5033,fortunemagazine,1194,USA - Media/News/Publishing
+396,25053299,5033,fortunemagazine,1185,USA - Pages 2
+397,25053299,5033,fortunemagazine,1110,US - Magazines - Business/Finance
+398,25053299,5033,fortunemagazine,2935,US* Publishing
+399,25053299,5033,fortunemagazine,2934,US** Publishing - Publications & Websites
+400,25053299,5033,fortunemagazine,2761,US*** Publishing - Publications & Websites - Business/Finance
+401,25053299,5033,fortunemagazine,2339,Year in Review US 2014 - Publishing
+402,436171805,15793,fusionpop,1520,Fusion - Competitive Media Networks
+403,436171805,15793,fusionpop,3139,Fusion Properties Custom Categories
+404,25453312,824,hallmarkchannel,654,Animal Planet - Competitive
+405,25453312,824,hallmarkchannel,99,Cable Networks
+406,25453312,824,hallmarkchannel,3955,Global* Media & Entertainment
+407,25453312,824,hallmarkchannel,1899,Hallmark Channel - Competitive Networks
+408,25453312,824,hallmarkchannel,1900,Hallmark Channel - Properties
+409,25453312,824,hallmarkchannel,1471,KCRETIRED USA - TV - Cable Networks
+410,25453312,824,hallmarkchannel,2236,L2 Television Category
+411,25453312,824,hallmarkchannel,2272,L2 TV - Hallmark Channel
+412,25453312,824,hallmarkchannel,5063,Marketing - TV all - Custom
+413,25453312,824,hallmarkchannel,5062,Marketing - US Media Industry - Custom
+414,25453312,824,hallmarkchannel,45,Tv network
+415,25453312,824,hallmarkchannel,3311,TV Network
+416,25453312,824,hallmarkchannel,4997,TV Network Roll Up Ranking - Hallmark - All
+417,25453312,824,hallmarkchannel,3517,TV Network Roll Up Ranking - Hallmark - Hallmark Channel
+418,25453312,824,hallmarkchannel,679,TV Networks Aggregate (Marketing)
+419,25453312,824,hallmarkchannel,682,TV Networks Cable (Marketing)
+420,25453312,824,hallmarkchannel,4894,US* All
+421,25453312,824,hallmarkchannel,1185,USA - Pages 2
+422,25453312,824,hallmarkchannel,1204,USA - TV
+423,25453312,824,hallmarkchannel,2940,US* Media & Entertainment
+424,25453312,824,hallmarkchannel,2937,US** Media & Entertainment - TV Networks
+425,25453312,824,hallmarkchannel,2780,US*** Media & Entertainment - TV Networks - Cable
+426,25453312,824,hallmarkchannel,2345,Year in Review US 2014 - TV Networks
+427,14934818,930,InStyle,5471,Bleacher Report - Additional Top Publishers Category - Custom
+428,14934818,930,InStyle,5470,Bleacher Report - Top Publishers Category - Custom
+429,14934818,930,InStyle,4935,Conde Nast - Women's Interest Competitive - Custom 
+430,14934818,930,InStyle,50,Daily Candy competitors
+431,14934818,930,InStyle,5390,FB Video Views
+432,14934818,930,InStyle,3956,Global* Publishing
+433,14934818,930,InStyle,961,Hearst Fashion & Luxury - Custom
+434,14934818,930,InStyle,2988,Inside Hook - Custom
+435,14934818,930,InStyle,621,InStyle Custom Category
+436,14934818,930,InStyle,804,InStyle Top Competitors
+437,14934818,930,InStyle,2235,L2 Magazines Category
+438,14934818,930,InStyle,5,Magazine
+439,14934818,930,InStyle,4047,Marketing - MPA Magazine 360 - Custom
+440,14934818,930,InStyle,5062,Marketing - US Media Industry - Custom
+441,14934818,930,InStyle,786,PopSugar - Custom
+442,14934818,930,InStyle,5198,Publisher Roll Up Ranking - Time Inc
+443,14934818,930,InStyle,3160,SheKnows - Custom
+444,14934818,930,InStyle,2668,Time Inc. - Publications 
+445,14934818,930,InStyle,4080,Time Inc - Style & Entertainment
+446,14934818,930,InStyle,5252,TIME Inc. - TIME Brands Rollup - Custom
+447,14934818,930,InStyle,4894,US* All
+448,14934818,930,InStyle,1194,USA - Media/News/Publishing
+449,14934818,930,InStyle,1185,USA - Pages 2
+450,14934818,930,InStyle,1115,US - Magazines - Fashion/Style
+451,14934818,930,InStyle,2935,US* Publishing
+452,14934818,930,InStyle,2934,US** Publishing - Publications & Websites
+453,14934818,930,InStyle,2760,US*** Publishing - Publications & Websites - Fashion/Style
+454,14934818,930,InStyle,1351,Women's Lifestyle - Custom
+455,14934818,930,InStyle,2490,Yahoo - Style Competitive Category
+456,14934818,930,InStyle,2339,Year in Review US 2014 - Publishing
+457,192981351,2239,LandRoverUSA,2238,ABC - Other Brands Custom 
+458,192981351,2239,LandRoverUSA,922,Audi - Custom
+459,192981351,2239,LandRoverUSA,5258,Bustle - Partners 3 Custom
+460,192981351,2239,LandRoverUSA,8,Cars
+461,192981351,2239,LandRoverUSA,1295,Engine Shop - Custom 2
+462,192981351,2239,LandRoverUSA,3959,Global* Automotive
+463,192981351,2239,LandRoverUSA,3974,Global*** Automotive - Automobiles & Manufacturers - Luxury
+464,192981351,2239,LandRoverUSA,1807,Land Rover - Competitive Custom
+465,192981351,2239,LandRoverUSA,1650,Link Click Collection
+466,192981351,2239,LandRoverUSA,2578,Luxury Auto Custom Category (Nissan)
+467,192981351,2239,LandRoverUSA,620,Luxury Brands
+468,192981351,2239,LandRoverUSA,5217,The Dodo - Brands - Custom
+469,192981351,2239,LandRoverUSA,5423,Turner Sociology - Automotive - Custom
+470,192981351,2239,LandRoverUSA,1200,USA - Automotive
+471,192981351,2239,LandRoverUSA,4894,US* All
+472,192981351,2239,LandRoverUSA,1185,USA - Pages 2
+473,192981351,2239,LandRoverUSA,2918,US* Automotive
+474,192981351,2239,LandRoverUSA,2912,US** Automotive - Automobiles & Manufacturers
+475,192981351,2239,LandRoverUSA,2682,US*** Automotive - Automobiles & Manufacturers - Luxury
+476,192981351,2239,LandRoverUSA,758,US - Luxury Automotive
+477,192981351,2239,LandRoverUSA,2326,Year in Review US 2014 - Automotive
+478,2367911,4272,MTV,1577,ABC Family - Custom
+479,2367911,4272,MTV,2987,Adult Swim - Linear Competitive
+480,2367911,4272,MTV,4051,BET - Competitive TV Networks - Custom
+481,2367911,4272,MTV,5471,Bleacher Report - Additional Top Publishers Category - Custom
+482,2367911,4272,MTV,5470,Bleacher Report - Top Publishers Category - Custom
+483,2367911,4272,MTV,4131,Bleacher Report - Top Publishers - Custom 
+484,2367911,4272,MTV,99,Cable Networks
+485,2367911,4272,MTV,2977,Cartoon Network - Social Trendsetters Category
+486,2367911,4272,MTV,4983,Conde Nast - Celebrity News Competitive - Custom
+487,2367911,4272,MTV,5260,Conde Nast - Young Interest - Custom Category 
+488,2367911,4272,MTV,1434,cS - Fuse Network - Custom
+489,2367911,4272,MTV,1455,cS - Revolt Media - Custom
+490,2367911,4272,MTV,3031,ESPN Competitive TV Nets
+491,2367911,4272,MTV,1291,ESPN Research - Competitors
+492,2367911,4272,MTV,5390,FB Video Views
+493,2367911,4272,MTV,3280,Fox News - Other Pages - Custom 
+494,2367911,4272,MTV,4866,Fusion TV Competitors - Custom Category
+495,2367911,4272,MTV,3955,Global* Media & Entertainment
+496,2367911,4272,MTV,1822,iOne - TV One Custom 
+497,2367911,4272,MTV,1471,KCRETIRED USA - TV - Cable Networks
+498,2367911,4272,MTV,2236,L2 Television Category
+499,2367911,4272,MTV,2279,L2 TV - MTV
+500,2367911,4272,MTV,4697,LoveLive - Custom Musicians 
+501,2367911,4272,MTV,5063,Marketing - TV all - Custom
+502,2367911,4272,MTV,5062,Marketing - US Media Industry - Custom
+503,2367911,4272,MTV,4,Media/news/publishing
+504,2367911,4272,MTV,3309,Media/News/Publishing
+505,2367911,4272,MTV,2018,MTV - Competitive News Custom
+506,2367911,4272,MTV,752,MTV - US Custom
+507,2367911,4272,MTV,3312,News/Media Website
+508,2367911,4272,MTV,2024,Revolt TV - Custom
+509,2367911,4272,MTV,5616,Shazam - Custom 
+510,2367911,4272,MTV,5575,Shazam – Custom
+511,2367911,4272,MTV,4620,S&P - VIAB - Viacom Inc.
+512,2367911,4272,MTV,5753,Telemundo - Entertainment - Custom
+513,2367911,4272,MTV,5755,Telemundo - Music - Custom
+514,2367911,4272,MTV,3287,Top 25 Social
+515,2367911,4272,MTV,45,Tv network
+516,2367911,4272,MTV,5007,TV Network Roll Up Ranking - Viacom - All
+517,2367911,4272,MTV,3525,TV Network Roll Up Ranking - Viacom - MTV
+518,2367911,4272,MTV,679,TV Networks Aggregate (Marketing)
+519,2367911,4272,MTV,682,TV Networks Cable (Marketing)
+520,2367911,4272,MTV,4894,US* All
+521,2367911,4272,MTV,1185,USA - Pages 2
+522,2367911,4272,MTV,1204,USA - TV
+523,2367911,4272,MTV,2940,US* Media & Entertainment
+524,2367911,4272,MTV,2937,US** Media & Entertainment - TV Networks
+525,2367911,4272,MTV,2780,US*** Media & Entertainment - TV Networks - Cable
+526,2367911,4272,MTV,646,VEVO - Custom 
+527,2367911,4272,MTV,4815,VEVO UK – Custom
+528,2367911,4272,MTV,2362,VH1 - Custom
+529,2367911,4272,MTV,3472,Viacom - All Properties - Custom
+530,2367911,4272,MTV,3446,Viacom - MTV - Custom
+531,2367911,4272,MTV,3433,Viacom - Music & Entertainment - Custom
+532,2367911,4272,MTV,3473,Viacom - US Properties - Custom
+533,2367911,4272,MTV,2497,Yahoo - Music Custom Category
+534,2367911,4272,MTV,2345,Year in Review US 2014 - TV Networks
+535,19426551,1669,nfl,5415,Additional FB View
+536,19426551,1669,nfl,1038,Bleacher Report - Sports Custom
+537,19426551,1669,nfl,5253,CBS Sports 2 - Custom
+538,19426551,1669,nfl,5652,Cigna/UCONN - Custom Category
+539,19426551,1669,nfl,1444,cS - PGA TOUR - Custom
+540,19426551,1669,nfl,3019,ESPN - NFL Competitive Set
+541,19426551,1669,nfl,1291,ESPN Research - Competitors
+542,19426551,1669,nfl,3017,ESPN Top 15 Competitors Instagram
+543,19426551,1669,nfl,4925,Facebook - Sports - Custom
+544,19426551,1669,nfl,5390,FB Video Views
+545,19426551,1669,nfl,3893,Feld Entertainment - Supercross Research - Custom
+546,19426551,1669,nfl,3280,Fox News - Other Pages - Custom 
+547,19426551,1669,nfl,5303,Fox Sports - Competitive - Custom 
+548,19426551,1669,nfl,3957,Global* Sports & Recreation
+549,19426551,1669,nfl,1650,Link Click Collection
+550,19426551,1669,nfl,2366,Mexico - NFL SuperBowl - Custom 
+551,19426551,1669,nfl,952,MLB Fan Cave - Custom
+552,19426551,1669,nfl,2654,MLB - Professional Sports Leagues - Custom
+553,19426551,1669,nfl,4715,MLS - Competitive Professional Leagues 
+554,19426551,1669,nfl,386,NBA - Professional Sports Leagues
+555,19426551,1669,nfl,4046,NFL
+556,19426551,1669,nfl,4666,NFL - Custom Competitive Set 
+557,19426551,1669,nfl,4667,NFL - Custom League Competitive Set 
+558,19426551,1669,nfl,5313,NFL - Custom League Competitive Set excl WWE
+559,19426551,1669,nfl,4665,NFL - League Category
+560,19426551,1669,nfl,3812,NHL - Leagues Custom
+561,19426551,1669,nfl,1566,Nike Best Practices - Custom
+562,19426551,1669,nfl,672,Professional Sports League
+563,19426551,1669,nfl,91,Sports league
+564,19426551,1669,nfl,3332,Sports League
+565,19426551,1669,nfl,5511,Super Bowl Advertisers - 2016
+566,19426551,1669,nfl,3287,Top 25 Social
+567,19426551,1669,nfl,463,Turner - General Sports Custom
+568,19426551,1669,nfl,667,Turner - Professional Sports Leagues
+569,19426551,1669,nfl,5574,Turner Sports Trial - Custom Category 2 
+570,19426551,1669,nfl,4894,US* All
+571,19426551,1669,nfl,1185,USA - Pages 2
+572,19426551,1669,nfl,1189,USA - Sports
+573,19426551,1669,nfl,5656,USA Sports Leagues - Custom Category
+574,19426551,1669,nfl,2933,US* Sports & Recreation
+575,19426551,1669,nfl,2699,US** Sports & Recreation - Professional Sports
+576,19426551,1669,nfl,1853,Valvoline US - Custom
+577,19426551,1669,nfl,2516,Yahoo - Sports Custom Category
+578,19426551,1669,nfl,2342,Year in Review US 2014 - Sports
+579,19426551,1669,nfl,5467,YouTube - AdBlitz 2015 Category
+580,19426551,1669,nfl,5464,YouTube - Ad Blitz Roll Up
+581,25589776,4579,people,2633,2015 Grammys Sponsors - Custom
+582,25589776,4579,people,2368,2015 SAG Awards (Shareablee Only)
+583,25589776,4579,people,1489,Bauer Entertainment - Custom
+584,25589776,4579,people,2321,Bauer Media - Custom
+585,25589776,4579,people,958,Billboard Music - Custom
+586,25589776,4579,people,5471,Bleacher Report - Additional Top Publishers Category - Custom
+587,25589776,4579,people,5470,Bleacher Report - Top Publishers Category - Custom
+588,25589776,4579,people,4131,Bleacher Report - Top Publishers - Custom 
+589,25589776,4579,people,2620,CBS Ad Sales
+590,25589776,4579,people,1827,CBS Digital - Celebrity News - Custom
+591,25589776,4579,people,2673,CBSi - TV Guide - Custom
+592,25589776,4579,people,5495,CBS TV - News Category - Custom 
+593,25589776,4579,people,4983,Conde Nast - Celebrity News Competitive - Custom
+594,25589776,4579,people,5749,E! Entertainment Media - Digital Category - Custom
+595,25589776,4579,people,5719,Entertainment - Custom
+596,25589776,4579,people,407,Entertainment Publisher - Competitive
+597,25589776,4579,people,5390,FB Video Views
+598,25589776,4579,people,3956,Global* Publishing
+599,25589776,4579,people,964,Hearst Young Women - Custom
+600,25589776,4579,people,2988,Inside Hook - Custom
+601,25589776,4579,people,2235,L2 Magazines Category
+602,25589776,4579,people,2984,Lucky Magazine - Custom
+603,25589776,4579,people,4047,Marketing - MPA Magazine 360 - Custom
+604,25589776,4579,people,5062,Marketing - US Media Industry - Custom
+605,25589776,4579,people,4,Media/news/publishing
+606,25589776,4579,people,3309,Media/News/Publishing
+607,25589776,4579,people,181,People.com - Custom
+608,25589776,4579,people,431,People.com - Top Competitors
+609,25589776,4579,people,786,PopSugar - Custom
+610,25589776,4579,people,5198,Publisher Roll Up Ranking - Time Inc
+611,25589776,4579,people,778,Spanfeller Media - Best Practices
+612,25589776,4579,people,1640,The 2014 Emmys Sponsors
+613,25589776,4579,people,1618,The Grammys 2014 Sponsors
+614,25589776,4579,people,5569,The Grammys - 2016 Sponsors - Custom
+615,25589776,4579,people,959,The Hollywood Reporter Competitive- Custom
+616,25589776,4579,people,1854,THR Cross-Engaged Category 
+617,25589776,4579,people,2668,Time Inc. - Publications 
+618,25589776,4579,people,4080,Time Inc - Style & Entertainment
+619,25589776,4579,people,5252,TIME Inc. - TIME Brands Rollup - Custom
+620,25589776,4579,people,3287,Top 25 Social
+621,25589776,4579,people,4894,US* All
+622,25589776,4579,people,1194,USA - Media/News/Publishing
+623,25589776,4579,people,1185,USA - Pages 2
+624,25589776,4579,people,1111,US - Magazines - Entertainment
+625,25589776,4579,people,2935,US* Publishing
+626,25589776,4579,people,2934,US** Publishing - Publications & Websites
+627,25589776,4579,people,2747,US*** Publishing - Publications & Websites - Entertainment
+628,25589776,4579,people,2350,Vanity Fair - Custom
+629,25589776,4579,people,3487,Warner Bros. - Entertainment News - Custom
+630,25589776,4579,people,2552,Yahoo - Celebriy Custom Category
+631,25589776,4579,people,2339,Year in Review US 2014 - Publishing
+632,223525053,12590,ringlingbros,9,Company
+633,223525053,12590,ringlingbros,2246,Feld Entertainment - Custom
+634,223525053,12590,ringlingbros,3955,Global* Media & Entertainment
+635,223525053,12590,ringlingbros,4894,US* All
+636,223525053,12590,ringlingbros,2940,US* Media & Entertainment
+637,223525053,12590,ringlingbros,2755,US** Media & Entertainment - Theater
+638,5988062,1188,theeconomist,3417,Adriano Nakanishi - Custom - Mídia internacional
+639,5988062,1188,theeconomist,1917,Barron's - Custom
+640,5988062,1188,theeconomist,405,Best Practices Social Brands
+641,5988062,1188,theeconomist,5471,Bleacher Report - Additional Top Publishers Category - Custom
+642,5988062,1188,theeconomist,5470,Bleacher Report - Top Publishers Category - Custom
+643,5988062,1188,theeconomist,133,Bloomberg - Custom
+644,5988062,1188,theeconomist,404,Business Publishing - Competitive
+645,5988062,1188,theeconomist,1297,CNN - Custom 2
+646,5988062,1188,theeconomist,1823,CNN Money - Competitive Custom
+647,5988062,1188,theeconomist,3999,CNN - Politics Custom
+648,5988062,1188,theeconomist,4932,Conde Nast - News Competitive - Custom 
+649,5988062,1188,theeconomist,1459,"cS - Bankrate, Inc. - Custom"
+650,5988062,1188,theeconomist,1460,cS - Business Insider - Custom
+651,5988062,1188,theeconomist,1441,cS - New York Magazine - Custom
+652,5988062,1188,theeconomist,41,Economist - Best Practices
+653,5988062,1188,theeconomist,283,Economist - Infotainment Media
+654,5988062,1188,theeconomist,40,Economist - Media/news/publishing
+655,5988062,1188,theeconomist,5390,FB Video Views
+656,5988062,1188,theeconomist,2521,Financial Times - Custom
+657,5988062,1188,theeconomist,3813,Forbes - Ad-Sales  Competitive - Custom
+658,5988062,1188,theeconomist,2948,Forbes Competitors - Custom
+659,5988062,1188,theeconomist,3956,Global* Publishing
+660,5988062,1188,theeconomist,2235,L2 Magazines Category
+661,5988062,1188,theeconomist,4047,Marketing - MPA Magazine 360 - Custom
+662,5988062,1188,theeconomist,5062,Marketing - US Media Industry - Custom
+663,5988062,1188,theeconomist,4,Media/news/publishing
+664,5988062,1188,theeconomist,3309,Media/News/Publishing
+665,5988062,1188,theeconomist,5168,Publisher Roll Up Ranking - The Economist
+666,5988062,1188,theeconomist,401,Reuters Custom
+667,5988062,1188,theeconomist,2558,Robb Report - Custom
+668,5988062,1188,theeconomist,685,Softbank - Custom
+669,5988062,1188,theeconomist,5214,The Dodo - Broad - Custom
+670,5988062,1188,theeconomist,5653,The Spectator – Custom
+671,5988062,1188,theeconomist,3809,The Week - Competitive - Custom 
+672,5988062,1188,theeconomist,377,UK Pages
+673,5988062,1188,theeconomist,4894,US* All
+674,5988062,1188,theeconomist,1194,USA - Media/News/Publishing
+675,5988062,1188,theeconomist,1185,USA - Pages 2
+676,5988062,1188,theeconomist,1110,US - Magazines - Business/Finance
+677,5988062,1188,theeconomist,2935,US* Publishing
+678,5988062,1188,theeconomist,2934,US** Publishing - Publications & Websites
+679,5988062,1188,theeconomist,2761,US*** Publishing - Publications & Websites - Business/Finance
+680,5988062,1188,theeconomist,824,World Economic Forum - News/Media 
+681,5988062,1188,theeconomist,1274,WSJ- Custom
+682,5988062,1188,theeconomist,2339,Year in Review US 2014 - Publishing
+683,14293310,1593,TIME,5471,Bleacher Report - Additional Top Publishers Category - Custom
+684,14293310,1593,TIME,5470,Bleacher Report - Top Publishers Category - Custom
+685,14293310,1593,TIME,133,Bloomberg - Custom
+686,14293310,1593,TIME,404,Business Publishing - Competitive
+687,14293310,1593,TIME,761,BuzzFeed - Custom
+688,14293310,1593,TIME,1591,Coach Select X-Engaged
+689,14293310,1593,TIME,4983,Conde Nast - Celebrity News Competitive - Custom
+690,14293310,1593,TIME,4932,Conde Nast - News Competitive - Custom 
+691,14293310,1593,TIME,1435,cS - Heavy.com - Custom
+692,14293310,1593,TIME,1441,cS - New York Magazine - Custom
+693,14293310,1593,TIME,40,Economist - Media/news/publishing
+694,14293310,1593,TIME,5390,FB Video Views
+695,14293310,1593,TIME,3956,Global* Publishing
+696,14293310,1593,TIME,2235,L2 Magazines Category
+697,14293310,1593,TIME,5,Magazine
+698,14293310,1593,TIME,4047,Marketing - MPA Magazine 360 - Custom
+699,14293310,1593,TIME,5062,Marketing - US Media Industry - Custom
+700,14293310,1593,TIME,4,Media/news/publishing
+701,14293310,1593,TIME,3309,Media/News/Publishing
+702,14293310,1593,TIME,181,People.com - Custom
+703,14293310,1593,TIME,5198,Publisher Roll Up Ranking - Time Inc
+704,14293310,1593,TIME,685,Softbank - Custom
+705,14293310,1593,TIME,5214,The Dodo - Broad - Custom
+706,14293310,1593,TIME,959,The Hollywood Reporter Competitive- Custom
+707,14293310,1593,TIME,2443,TIME - Custom 
+708,14293310,1593,TIME,4079,Time Inc. - News & Sports 
+709,14293310,1593,TIME,2668,Time Inc. - Publications 
+710,14293310,1593,TIME,5252,TIME Inc. - TIME Brands Rollup - Custom
+711,14293310,1593,TIME,4894,US* All
+712,14293310,1593,TIME,1194,USA - Media/News/Publishing
+713,14293310,1593,TIME,1185,USA - Pages 2
+714,14293310,1593,TIME,1114,US - Magazines - General News
+715,14293310,1593,TIME,2935,US* Publishing
+716,14293310,1593,TIME,2934,US** Publishing - Publications & Websites
+717,14293310,1593,TIME,2754,US*** Publishing - Publications & Websites - General News
+718,14293310,1593,TIME,824,World Economic Forum - News/Media 
+719,14293310,1593,TIME,2339,Year in Review US 2014 - Publishing

@@ -1,0 +1,38 @@
+Properties to look at
+
+Twitter_id	Twitter_name
+'30309979'	'106andpark',
+'18342955'	'abc11_wtvd',
+'16374678'	'abc7',
+'119606058'	'aquiyahorashow',
+'16560657'	'bet',
+'226299107'	'betnews',
+'9695312'	'billboard',
+'32448740'	'brueggers',
+'1426645165'	'bustle',
+'21308602'	'cartoonnetwork',
+'759251'	'cnn',
+'73200694'	'coach',
+'634784951'	'dasaniwater',
+'14946736'	'directv',
+'27677483'	'essencemag',
+'25053299'	'fortunemagazine',
+'436171805'	'fusionpop',
+'25453312'	'hallmarkchannel',
+'14934818'	'instyle',
+'192981351'	'landroverusa',
+'2367911'	'mtv',
+'19426551'	'nfl',
+'25589776'	'peoplemag',
+'223525053'	'ringlingbros',
+'5988062'	'theeconomist',
+'14293310'	'time',
+'40924038'	'univision',
+'15513910'	'valvoline',
+
+
+Path:
+https://s3.amazonaws.com/shareablee/twitter_analytics/1.1/analytics_reports/
+
+Data columns:
+time	impressions	retweets	page_id	twitter_id	fans

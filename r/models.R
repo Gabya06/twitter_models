@@ -1,0 +1,10 @@
+library(reshape2)
+library(scales)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+library(funModeling)
+setwd("/Users/Gabi/Documents/Shareablee/Twitter/r/")
+data = read.csv('../data/twitter_data')
+
+summary(data)
