@@ -180,9 +180,11 @@ linModel1 = Model()
 linModel1.clean(quantile = .1)
 print "TRAINING ...."
 linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
+print "\n"
 print "GETTING RESULTS ...."
 score = linModel1.r_score
 print "ADJUSTED R2 = ", score
+print "\n"
 results = linModel1.get_results()
 plot_errors(results)
 print "*" * 15
@@ -194,15 +196,28 @@ model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'
 tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold].tw_name.drop_duplicates()
 
 
+
+# cross validation
 alphas = np.logspace(-4, -.5, 30)
+print "*" * 15
+print "MODEL 2"
+print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
+print tw_names_drop
 
 linModel2 = Model()
-linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.tw_name.isin(tw_names_drop_1)]
+# remove names with largest average of error
+print linModel2.tw_data.head()
+linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.tw_name.isin(tw_names_drop)]
 linModel2.clean(quantile = .1)
-linModel2.train(model = Ridge, perc_train = .9, alpha = .1)
+print "CROSS VALIDATION ...."
+best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
+print "BEST ALPHA: ", best_alpha
+print "TRAINING ...."
+linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
 score2 = linModel2.r_score
+print "ADJUSTED R2 = ", score2
 results2 = linModel2.get_results()
-
+print "*" * 15
 # tw_names_drop = linModel.model_results[linModel.model_results.perc_diff>5].tw_name.drop_duplicates()
 # linModel2.tw_data = linModel2.tw_data[~linModel3.tw_data.tw_name.isin(tw_names_drop)]
 # linModel2.clean(quantile = .1)
