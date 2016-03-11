@@ -63,19 +63,21 @@ class Model:
 
 		return [x_train, y_train, x_test, y_test]
 
-	def cross_validate(self, alphas):
+	def cross_validate(self, alphas, folds):
 
-model_cv = self.LassoCV(alphas=alphas, cv = 5, selection = 'random')
-folds = 30
-k_fold = cross_validation.KFold(n=len(X), n_folds=folds, shuffle=True)
-cv_scores = list()
-cv_alphas = list()
-for k, (train, test) in enumerate(k_fold):
-lasso_cv.fit(X.ix[train], Y.ix[train])
-lasso_cv.alpha_ = alphas[k]
-cv_alphas.append(lasso_cv.alpha_)
-cv_scores.append(lasso_cv.score(X.ix[test], Y.ix[test]))
-print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, lasso_cv.alpha_, lasso_cv.score(X.ix[test], Y.ix[test])))
+		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5, selection = 'random')
+		k_fold = cross_validation.KFold(n=len(X), n_folds=folds, shuffle=True)
+		cv_scores = list()
+		cv_alphas = list()
+		for k, (train, test) in enumerate(k_fold):
+			lasso_cv.fit(X.ix[train], Y.ix[train])
+			lasso_cv.alpha_ = alphas[k]
+			cv_alphas.append(lasso_cv.alpha_)
+			cv_scores.append(lasso_cv.score(X.ix[test], Y.ix[test]))
+			print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, lasso_cv.alpha_, lasso_cv.score(X.ix[test], Y.ix[test])))
+		lasso_cv_df = pd.DataFrame({'fold': range(folds),'alpha': cv_alphas, 'score': cv_scores})
+		print "Best alpha's\n", lasso_cv_df.sort_values('score', ascending=False).head(10)
+		best_alpha = lasso_cv_df.sort_values('score', ascending=False).alpha.iloc[0]
 
 
 	def train(self, model, perc_train, alpha):
