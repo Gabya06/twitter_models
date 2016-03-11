@@ -63,19 +63,25 @@ class Model:
 
 		return [x_train, y_train, x_test, y_test]
 
-	def cross_validate(self, alphas):
 
-model_cv = self.LassoCV(alphas=alphas, cv = 5, selection = 'random')
-folds = 30
-k_fold = cross_validation.KFold(n=len(X), n_folds=folds, shuffle=True)
-cv_scores = list()
-cv_alphas = list()
-for k, (train, test) in enumerate(k_fold):
-lasso_cv.fit(X.ix[train], Y.ix[train])
-lasso_cv.alpha_ = alphas[k]
-cv_alphas.append(lasso_cv.alpha_)
-cv_scores.append(lasso_cv.score(X.ix[test], Y.ix[test]))
-print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, lasso_cv.alpha_, lasso_cv.score(X.ix[test], Y.ix[test])))
+
+	def cross_validate(self, alphas, folds):
+		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5)
+		k_fold = cross_validation.KFold(n=self.n, n_folds=folds, shuffle=True)
+		cv_scores = list()
+		cv_alphas = list()
+		for k, (train, test) in enumerate(k_fold):
+			X = self.tw_data.drop(['impressions'], axis=1)
+			Y = self.tw_data.impressions
+			model_cv.fit(X.ix[train], Y.ix[train])
+			model_cv.alpha_ = alphas[k]
+			cv_alphas.append(model_cv.alpha_)
+			cv_scores.append(model_cv.score(X.ix[test], Y.ix[test]))
+			print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, model_cv.alpha_, model_cv.score(X.ix[test], Y.ix[test])))
+		model_cv_df = pd.DataFrame({'fold': range(folds),'alpha': cv_alphas, 'score': cv_scores})
+		print "Best alpha's\n", model_cv_df.sort_values('score', ascending=False).head(10)
+		best_alpha = model_cv_df.sort_values('score', ascending=False).alpha.iloc[0]
+		return best_alpha
 
 
 	def train(self, model, perc_train, alpha):
@@ -174,26 +180,44 @@ linModel1 = Model()
 linModel1.clean(quantile = .1)
 print "TRAINING ...."
 linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
+print "\n"
 print "GETTING RESULTS ...."
 score = linModel1.r_score
 print "ADJUSTED R2 = ", score
+print "\n"
 results = linModel1.get_results()
 plot_errors(results)
 print "*" * 15
 
 
 err_threshold = 0.6
-model_err_stats = linModel1.model_results.groupby('tw_name')['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
+model_err_stats = linModel1.model_results.groupby(['page_id','tw_name'])['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
 model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
-tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold].tw_name.drop_duplicates()
+tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold][['page_id','tw_name']].drop_duplicates()
+
+
+
+# cross validation
+alphas = np.logspace(-4, -.5, 30)
+print "*" * 15
+print "MODEL 2"
+print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
+print tw_names_drop
 
 linModel2 = Model()
-linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.tw_name.isin(tw_names_drop_1)]
+# remove names with largest average of error
+print linModel2.tw_data.head()
+linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.page_id.isin(tw_names_drop.page_id)]
 linModel2.clean(quantile = .1)
-linModel2.train(model = Ridge, perc_train = .9, alpha = .1)
+print "CROSS VALIDATION ...."
+best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
+print "BEST ALPHA: ", best_alpha
+print "TRAINING ...."
+linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
 score2 = linModel2.r_score
+print "ADJUSTED R2 = ", score2
 results2 = linModel2.get_results()
-
+print "*" * 15
 # tw_names_drop = linModel.model_results[linModel.model_results.perc_diff>5].tw_name.drop_duplicates()
 # linModel2.tw_data = linModel2.tw_data[~linModel3.tw_data.tw_name.isin(tw_names_drop)]
 # linModel2.clean(quantile = .1)
