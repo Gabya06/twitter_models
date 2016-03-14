@@ -1,5 +1,8 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
+
+#http://connor-johnson.com/2014/02/18/linear-regression-with-python/
+
 """
 script for buidling linear model
 
