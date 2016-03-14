@@ -69,20 +69,14 @@ class Model:
 
 
 	def cross_validate(self, alphas, folds):
-<<<<<<< HEAD
 		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5, selection = 'random')
-=======
 		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5)
->>>>>>> gabi
 		k_fold = cross_validation.KFold(n=self.n, n_folds=folds, shuffle=True)
 		cv_scores = list()
 		cv_alphas = list()
 		for k, (train, test) in enumerate(k_fold):
-<<<<<<< HEAD
 			X = self.tw_data.drop(['tw_name','impressions'], axis=1)
-=======
 			X = self.tw_data.drop(['impressions'], axis=1)
->>>>>>> gabi
 			Y = self.tw_data.impressions
 			model_cv.fit(X.ix[train], Y.ix[train])
 			model_cv.alpha_ = alphas[k]
@@ -90,11 +84,8 @@ class Model:
 			cv_scores.append(model_cv.score(X.ix[test], Y.ix[test]))
 			print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, model_cv.alpha_, model_cv.score(X.ix[test], Y.ix[test])))
 		model_cv_df = pd.DataFrame({'fold': range(folds),'alpha': cv_alphas, 'score': cv_scores})
-<<<<<<< HEAD
 		print "Best alpha's\n", model_cv_df.sort_values('score', ascending=False).head(10)
-=======
 		#print "Best alpha's\n", model_cv_df.sort_values('score', ascending=False).head(10)
->>>>>>> gabi
 		best_alpha = model_cv_df.sort_values('score', ascending=False).alpha.iloc[0]
 		return best_alpha
 
@@ -242,7 +233,7 @@ print "*" * 15
 # linModel2.tw_data = linModel2.tw_data[~linModel3.tw_data.tw_name.isin(tw_names_drop)]
 # linModel2.clean(quantile = .1)
 # linModel2.train(model = Ridge, perc_train = .9, alpha = .1)
-=======
+
 # print "*" * 30
 # print "MODEL 1 - Using all 27 properties for modeling impressions"
 # print ".... CLEANING DATA .... REMOVING OUTLIERS ...."
@@ -269,7 +260,7 @@ print "*" * 15
 # print tw_names_drop
 
 # print ".... PLOTTING ERRORS ...."
->>>>>>> gabi
+
 # plot_errors(results)
 
 
