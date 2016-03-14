@@ -1,7 +1,7 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 """
-Created on Tue Feb 16 18:26:26 2016
+script for buidling linear model
 
 @author: Gabi
 """
@@ -34,8 +34,8 @@ class Model:
 		self.tw_data = self.tw_data.set_index(np.arange(0, self.n))
 
 		# add weekday
-		self.tw_data['weekday'] = self.tw_data.time.map(lambda x: np.int(x.date().weekday()))
 		try:
+			self.tw_data['weekday'] = self.tw_data.time.map(lambda x: np.int(x.date().weekday()))
 			self.tw_data.drop('time', axis=1, inplace=True)
 
 		except:
@@ -43,7 +43,7 @@ class Model:
 		# if 'time' in self.tw_data.columns: self.tw_data.drop('time', axis=1, inplace=True)
 
 
-	def __get_train_test(self, perc_train = 0.9):
+	def _get_train_test(self, perc_train = 0.9):
 		# # sample for training
 		n_train = np.round(self.n * perc_train)
 		ndex_train = np.random.randint(0, self.n, n_train)
@@ -79,19 +79,21 @@ class Model:
 			cv_scores.append(model_cv.score(X.ix[test], Y.ix[test]))
 			print("[fold {0}] alpha: {1:.9f}, score: {2:.5f}". format(k, model_cv.alpha_, model_cv.score(X.ix[test], Y.ix[test])))
 		model_cv_df = pd.DataFrame({'fold': range(folds),'alpha': cv_alphas, 'score': cv_scores})
-		print "Best alpha's\n", model_cv_df.sort_values('score', ascending=False).head(10)
+		#print "Best alpha's\n", model_cv_df.sort_values('score', ascending=False).head(10)
 		best_alpha = model_cv_df.sort_values('score', ascending=False).alpha.iloc[0]
 		return best_alpha
 
 
 	def train(self, model, perc_train, alpha):
-		x_train, y_train, x_test, y_test = self.__get_train_test(perc_train)
+		x_train, y_train, x_test, y_test = self._get_train_test(perc_train)
 		self.model = model(alpha)
 		self.model.fit(x_train, y_train)
 		self.r_score = self.model.score(x_test, y_test)
 		self.model_results.predicted = self.model.predict(x_test)
 
 
+	def get_coefs(self):
+		return self.model.coef_
 
 	def get_results(self):
 		tw_samples = self.user_data[['user_id','tw_name']].drop_duplicates()
@@ -133,12 +135,14 @@ def plot_errors(results):
 	bins = results.err_cat.drop_duplicates()
 	bins = bins.reset_index().drop('index',axis=1)
 	# plot
-	fig, axes = pyplot.subplots(nrows = 2, ncols = 6, figsize = (16,8))
+	n_bins = results.err_cat.drop_duplicates().shape[0]
+	n_cols = int(np.round(n_bins/2.0))
+	fig, axes = pyplot.subplots(nrows = 2, ncols = n_cols, figsize = (16,8))
 	for i, var in enumerate(bins.err_cat):
-		if i <=5:
+		if i <=n_cols-1:
 			ax = axes[0][i]
-		elif i>5:
-			ax = axes[1][i-6]
+		elif i>n_cols-1:
+			ax = axes[1][i-n_cols-1]
 
 		tmp = results.loc[(results.err_cat == var)] # & (results.frequency>100)]
 		if (any(tmp[tmp.frequency >100].frequency) & tmp[tmp.frequency >100].shape[0]>=3):
@@ -174,53 +178,93 @@ def plot_errors(results):
 # ridgeResults.err_cat =  pd.cut(ridgeResults.perc_diff, bins = bins, right = True)
 # bins2 = np.linspace(min(errors), max(errors)+1, num = 10)
 
-print "*" * 15
-print "MODEL 1 - Using all 27 properties for modeling impressions"
-linModel1 = Model()
-linModel1.clean(quantile = .1)
-print "TRAINING ...."
-linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
-print "\n"
-print "GETTING RESULTS ...."
-score = linModel1.r_score
-print "ADJUSTED R2 = ", score
-print "\n"
-results = linModel1.get_results()
-plot_errors(results)
-print "*" * 15
+# print "*" * 30
+# print "MODEL 1 - Using all 27 properties for modeling impressions"
+# print ".... CLEANING DATA .... REMOVING OUTLIERS ...."
+# linModel1 = Model()
+# linModel1.clean(quantile = .1)
+# print ".... TRAINING MODEL 1 ...."
+# linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
+# print "\n"
+# print ".... GETTING RESULTS FOR MODEL 1...."
+# score = linModel1.r_score
+# print "ADJUSTED R2 = ", score
+# print "\n"
+# results = linModel1.get_results()
 
+# err_threshold = 0.6
+# model_err_stats = linModel1.model_results.groupby(['page_id','tw_name'])['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
+# model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
+# tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold][['page_id','tw_name']].drop_duplicates()
 
-err_threshold = 0.6
-model_err_stats = linModel1.model_results.groupby(['page_id','tw_name'])['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
-model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
-tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold][['page_id','tw_name']].drop_duplicates()
+# print "MODEL 1 RESULTS:"
+# print model_err_stats
+# print
+# print "BIGGEST ERRORS:"
+# print tw_names_drop
 
-
-
-# cross validation
-alphas = np.logspace(-4, -.5, 30)
-print "*" * 15
-print "MODEL 2"
-print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
-print tw_names_drop
-
-linModel2 = Model()
-# remove names with largest average of error
-print linModel2.tw_data.head()
-linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.page_id.isin(tw_names_drop.page_id)]
-linModel2.clean(quantile = .1)
-print "CROSS VALIDATION ...."
-best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
-print "BEST ALPHA: ", best_alpha
-print "TRAINING ...."
-linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
-score2 = linModel2.r_score
-print "ADJUSTED R2 = ", score2
-results2 = linModel2.get_results()
-print "*" * 15
-# tw_names_drop = linModel.model_results[linModel.model_results.perc_diff>5].tw_name.drop_duplicates()
-# linModel2.tw_data = linModel2.tw_data[~linModel3.tw_data.tw_name.isin(tw_names_drop)]
-# linModel2.clean(quantile = .1)
-# linModel2.train(model = Ridge, perc_train = .9, alpha = .1)
+# print ".... PLOTTING ERRORS ...."
 # plot_errors(results)
-# remove large error twitter accounts
+
+
+# cross validation for model 2 (exludes users with largest errors)
+# alphas = np.logspace(-4, -.5, 20)
+# print "*" * 30
+# print "MODEL 2"
+# print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
+
+
+# linModel2 = Model()
+# # remove names with largest average of error
+# linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.page_id.isin(tw_names_drop.page_id)]
+# print ".... CLEANING DATA .... REMOVING OUTLIERS ...."
+# linModel2.clean(quantile = .1)
+# print "\n"
+# print "5 FOLD CROSS VALIDATION ...."
+# best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
+# print
+# print "FOUND BEST ALPHA USED IN MODEL 2: ", best_alpha
+# print ".... TRAINING MODEL 2...."
+# linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
+# score2 = linModel2.r_score
+# print "ADJUSTED R2 = ", score2
+# results2 = linModel2.get_results()
+
+# model_err_stats2 = linModel2.model_results.groupby(['page_id','tw_name'])['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
+# model_err_stats2.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
+# tw_names_drop2 = model_err_stats2[model_err_stats2.err_mean > err_threshold][['page_id','tw_name']].drop_duplicates()
+
+# print "MODEL 2 RESULTS:"
+# print model_err_stats2
+# print
+# print "BIGGEST ERRORS:"
+# print tw_names_drop2
+
+# print ".... PLOTTING ERRORS FOR MODEL 2...."
+# plot_errors(results2)
+
+
+
+# print "*" * 30
+# print "BUILDING MODEL FOR TWITTER USERS GUILTY OF LARGEST ERRORS"
+
+# linModel3 = Model()
+# linModel3.tw_data = linModel3.tw_data[linModel3.tw_data.page_id.isin(tw_names_drop.page_id)]
+# linModel3.clean(quantile = .1)
+# best_alpha_3 = linModel3.cross_validate(alphas=alphas, folds=10)
+# linModel3.train(model = Ridge, perc_train = .9, alpha = best_alpha_3)
+# score3 = linModel3.r_score
+# results3 = linModel3.get_results()
+# print results3
+# model_err_stats3 = linModel3.model_results.groupby(['page_id','tw_name'])['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
+# model_err_stats3.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
+
+# print "MODEL 3 RESULTS:"
+# print model_err_stats3
+
+# print ".... PLOTTING ERRORS FOR MODEL 3...."
+# plot_errors(results3)
+
+
+
+

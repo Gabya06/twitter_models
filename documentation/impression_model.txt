@@ -35,4 +35,36 @@ Path:
 https://s3.amazonaws.com/shareablee/twitter_analytics/1.1/analytics_reports/
 
 Data columns:
-time	impressions	retweets	page_id	twitter_id	fans
+Jan 2016
+~ 25 properties
+time, impressions, retweets, page_id, twitter_id, fans
+
+Data Cleaning:
+Removed outliers in quantiles: .9 and .1
+
+Training for all models - 90% of data
+Testing - 10% of data
+
+Model 1 information
+- Trained on all 27 properties
+- alpha used: 0.1
+- coefficients: array([  8.50609133e-03,   2.16934297e+02])
+
+Model 2 information
+- Trained on smaller subset of  properties
+- alpha tuned using cross validation:
+- coefficients:
+
+Next stepts:
+Statistics to compute:
+pvalues
+bring in categorical data
+
+Greg needs:
+1 year of data - 2015: how hard would this be? how much data would this be?
+shopping list of categorical data
+rmse
+r2
+pvalues
+
+
