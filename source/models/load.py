@@ -26,13 +26,14 @@ from sklearn.utils import shuffle
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import PolynomialFeatures
 
-
-data_path = "/Users/Gabi/Documents/Shareablee/Twitter/data/"
+data_path = "/Users/gabi/src/twitter_models/data/"
+#data_path = "/Users/Gabi/Documents/Shareablee/Twitter/data/"
 
 # twitter_data_path = os.path.join(data_path, 'twitter_data')
 twitter_data_path = os.path.join(data_path, 'twitter_data_102015_012016') # added 102015-122015
 user_data_path = os.path.join(data_path, 'tw_account_info')
 project_path =  '/Users/Gabi/Documents/Shareablee/Twitter/'
+project_path =  '/Users/gabi/src/twitter_models/'
 os.chdir(project_path)
 
 pd_read_names = ['index','time', 'impressions', 'retweets', 'page_id', 'twitter_id', 'followers']

@@ -69,13 +69,12 @@ class Model:
 
 
 	def cross_validate(self, alphas, folds):
-		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5, selection = 'random')
 		model_cv = linear_model.RidgeCV(alphas=alphas, cv = 5)
 		k_fold = cross_validation.KFold(n=self.n, n_folds=folds, shuffle=True)
 		cv_scores = list()
 		cv_alphas = list()
 		for k, (train, test) in enumerate(k_fold):
-			X = self.tw_data.drop(['tw_name','impressions'], axis=1)
+			# X = self.tw_data.drop(['tw_name','impressions'], axis=1)
 			X = self.tw_data.drop(['impressions'], axis=1)
 			Y = self.tw_data.impressions
 			model_cv.fit(X.ix[train], Y.ix[train])
@@ -184,51 +183,51 @@ def plot_errors(results):
 # ridgeResults.err_cat =  pd.cut(ridgeResults.perc_diff, bins = bins, right = True)
 # bins2 = np.linspace(min(errors), max(errors)+1, num = 10)
 
-<<<<<<< HEAD
-print "*" * 15
-print "MODEL 1 - Using all 27 properties for modeling impressions"
-linModel1 = Model()
-linModel1.clean(quantile = .1)
-print "TRAINING ...."
-linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
-print "\n"
-print "GETTING RESULTS ...."
-score = linModel1.r_score
-print "ADJUSTED R2 = ", score
-print "\n"
-results = linModel1.get_results()
-plot_errors(results)
-print "*" * 15
+
+# print "*" * 15
+# print "MODEL 1 - Using all 27 properties for modeling impressions"
+# linModel1 = Model()
+# linModel1.clean(quantile = .1)
+# print "TRAINING ...."
+# linModel1.train(model = Ridge, perc_train = .9, alpha = .1)
+# print "\n"
+# print "GETTING RESULTS ...."
+# score = linModel1.r_score
+# print "ADJUSTED R2 = ", score
+# print "\n"
+# results = linModel1.get_results()
+# plot_errors(results)
+# print "*" * 15
 
 
-err_threshold = 0.6
-model_err_stats = linModel1.model_results.groupby('tw_name')['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
-model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
-tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold].tw_name.drop_duplicates()
+# err_threshold = 0.6
+# model_err_stats = linModel1.model_results.groupby('tw_name')['perc_diff'].agg(['count','sum','mean']).sort_values('mean',ascending = False, axis =0).reset_index()
+# model_err_stats.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':'err_mean'}, inplace = True)
+# tw_names_drop = model_err_stats[model_err_stats.err_mean > err_threshold].tw_name.drop_duplicates()
 
 
 
 # cross validation
-alphas = np.logspace(-4, -.5, 30)
-print "*" * 15
-print "MODEL 2"
-print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
-print tw_names_drop
+# alphas = np.logspace(-4, -.5, 30)
+# print "*" * 15
+# print "MODEL 2"
+# print "REMOVING TWITTER USERS WITH AVG ERRORS > 60%"
+# print tw_names_drop
 
-linModel2 = Model()
-# remove names with largest average of error
-print linModel2.tw_data.head()
-linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.tw_name.isin(tw_names_drop)]
-linModel2.clean(quantile = .1)
-print "CROSS VALIDATION ...."
-best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
-print "BEST ALPHA: ", best_alpha
-print "TRAINING ...."
-linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
-score2 = linModel2.r_score
-print "ADJUSTED R2 = ", score2
-results2 = linModel2.get_results()
-print "*" * 15
+# linModel2 = Model()
+# # remove names with largest average of error
+# print linModel2.tw_data.head()
+# linModel2.tw_data = linModel2.tw_data[~linModel2.tw_data.tw_name.isin(tw_names_drop)]
+# linModel2.clean(quantile = .1)
+# print "CROSS VALIDATION ...."
+# best_alpha = linModel2.cross_validate(alphas=alphas, folds=5)
+# print "BEST ALPHA: ", best_alpha
+# print "TRAINING ...."
+# linModel2.train(model = Ridge, perc_train = .9, alpha = best_alpha)
+# score2 = linModel2.r_score
+# print "ADJUSTED R2 = ", score2
+# results2 = linModel2.get_results()
+# print "*" * 15
 # tw_names_drop = linModel.model_results[linModel.model_results.perc_diff>5].tw_name.drop_duplicates()
 # linModel2.tw_data = linModel2.tw_data[~linModel3.tw_data.tw_name.isin(tw_names_drop)]
 # linModel2.clean(quantile = .1)
