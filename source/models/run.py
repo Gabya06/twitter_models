@@ -37,8 +37,8 @@ print
 print "BIGGEST ERRORS:"
 print tw_names_drop
 
-print ".... PLOTTING ERRORS ....\n"
-plot_errors(results)
+# print ".... PLOTTING ERRORS ....\n"
+# plot_errors(results)
 
 
 alphas = np.logspace(-4, -.5, 20)
@@ -93,8 +93,8 @@ print
 print "BIGGEST ERRORS:"
 print tw_names_drop2
 
-print ".... PLOTTING ERRORS FOR MODEL 2...."
-plot_errors(results2)
+# print ".... PLOTTING ERRORS FOR MODEL 2...."
+# plot_errors(results2)
 
 
 
@@ -115,8 +115,8 @@ model_err_stats3.rename(columns = {'count':'frequency', 'sum':'err_sum' ,'mean':
 print "MODEL 3 RESULTS:"
 print model_err_stats3
 
-print ".... PLOTTING ERRORS FOR MODEL 3...."
-plot_errors(results3)
+# print ".... PLOTTING ERRORS FOR MODEL 3...."
+# plot_errors(results3)
 
 
 

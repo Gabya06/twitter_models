@@ -29,7 +29,8 @@ from sklearn.preprocessing import PolynomialFeatures
 
 data_path = "/Users/Gabi/Documents/Shareablee/Twitter/data/"
 
-twitter_data_path = os.path.join(data_path, 'twitter_data')
+# twitter_data_path = os.path.join(data_path, 'twitter_data')
+twitter_data_path = os.path.join(data_path, 'twitter_data_102015_012016') # added 102015-122015
 user_data_path = os.path.join(data_path, 'tw_account_info')
 project_path =  '/Users/Gabi/Documents/Shareablee/Twitter/'
 os.chdir(project_path)
