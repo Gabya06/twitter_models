@@ -163,14 +163,20 @@ Best alpha's
 
 
 ### A bit of documentation on Model class:
+
 The Model class initializes a model with the following attributes:
-Twitter and user data 
-Model results: a dataframe to store page_id, followers, retweets, impressions, predicted and percent differences
-rmse score
-n data points
-model (linear regression)
+- Data: Twitter and user data 
+- Model results: a dataframe to store page_id, followers, retweets, impressions, predicted and percent differences
+- rmse score
+- n data points
+- model (linear regression)
+
 The clean function:
-Removes retweets and impressions above and below the input quantile (this is .10 by default)
-Add weekday as a feature and drop time column
-The train function gets randomized training and test data based on percent to train (default is 90%), fits the model and sets the score and predicted values.
-The cross validate function takes as input alphas and the number of k-folds to run (default is 5) and performs cross-validation to find the best alpha. It returns the best alpha found based on k-fold cross validation.
+- Removes retweets and impressions above and below the input quantile (this is .10 by default)
+- Add weekday as a feature and drop time column
+
+The train function:
+- Gets randomized training and test data based on percent to train (default is 90%), fits the model and sets the score and predicted values.
+
+The cross validate function:
+- Takes as input alphas and the number of k-folds to run (default is 5) and performs cross-validation to find the best alpha. - It returns the best alpha found based on k-fold cross validation.
