@@ -180,3 +180,40 @@ The train function:
 
 The cross validate function:
 - Takes as input alphas and the number of k-folds to run (default is 5) and performs cross-validation to find the best alpha. - It returns the best alpha found based on k-fold cross validation.
+
+```python
+class Model:
+    '''
+    class to build linear regression model to predict impressions based on followers & re-tweets
+    '''
+    def __init__(self):
+        '''
+        Initialize model with Twitter data with user data (not used yet)
+        Has rmse, r_score, n and model attributes
+        '''
+        self.tw_data = load_tw_data()
+        self.user_data = load_user_data()
+
+        # self.result = pd.DataFrame(columns = ['base_user','cross_user','base_total_overlap','perc_overlap'])
+        self.model_results = pd.DataFrame(columns=['page_id', 'followers', 'retweets', 'impressions', 'predicted', \
+                                                   'perc_diff', 'err_cat'])
+        self.rmse = None
+        self.r_score = None
+        self.n = None
+        self.model = None
+
+
+    def train(self, model, perc_train, alpha):
+        '''
+        fit model on training data, set score and model results 
+        :param model: linear model to set (Ridge, Lasso..)  
+        :param perc_train: percent to use for training (float between 0 & 1)
+        :param alpha: penalty value for model 
+
+        '''
+        x_train, y_train, x_test, y_test = self._get_train_test(perc_train)
+        self.model = model(alpha)
+        self.model.fit(x_train, y_train)
+        self.r_score = self.model.score(x_test, y_test)
+        self.model_results.predicted = self.model.predict(x_test)
+```
